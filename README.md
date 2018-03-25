@@ -1,2 +1,2 @@
 # chenyuebo.github.io
-chenyuebo blog
+[chenyuebo blog](https://chenyuebo.github.io/)
