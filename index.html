@@ -162,7 +162,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>我的2023年</p>
+
       
 
       
@@ -175,6 +176,78 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2024/02/05/2023-summary/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-pc-remote-control" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/01/06/pc-remote-control/">PCI-E电脑远程开机卡</a>
+    </h1>
+  
+
+        
+        <a href="/2024/01/06/pc-remote-control/" class="archive-article-date">
+  	<time datetime="2024-01-06T15:26:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最为一个DIY爱好者，很早就想自己做一个远程开机卡了，网上有不少开源的电脑开机卡设计，有些是使用光耦进行控制的，光耦单向导通，接线区分正负极。还有些使用立创商城中固态继电器方案的，但是立创商城固态继电器价格非常高。所以自己从淘宝找了一款固态继电器，于是有了本项目。</p>
+<p>开机卡自己已经在使用了，可以通过腾讯连连远程控制电脑开关机，满足自己了需要，使用过程没有发现问题。</p>
+<p>项目已在立创开源硬件平台开源：<a target="_blank" rel="noopener" href="https://oshwhub.com/chenyuebo/dian-nao-yuan-cheng-kai-ji-ka-pcie">https://oshwhub.com/chenyuebo/dian-nao-yuan-cheng-kai-ji-ka-pcie</a></p>
+<p>电路其实很简单，自己已经使用8266做过几个小项目了，esp8266相关的电路已经很熟悉了。<br>这次不同的地方在于固态继电器和PCI-E接口是第一次接触和使用。</p>
+<p>PCB一共打样了两次<br>第一次主要是验证金属机箱内wifi信号问题，放入机箱后wifi是否还能正常连接，是否可以手机进行控制，经测试网络连接正常，不会断联。<br>另一个要验证的就是PCI-E接口，验证能不能通过PCIE接口进行供电，能不能检测电脑开机状态。测试发现A1和B17连接时虽然电脑可以开机，但是主板上电自检很慢，大概会比平时多十几秒，把线刮断后就正常了。<br>第一次打样排针封装也错了，焊接排针时才发现。</p>
+<p>PCB第二次打样主要是修改错误，调整布局，缩小PCB尺寸。</p>
+<p>电路原理图：<br><img src="/images/pc-remote-control/Schematic.png" alt="电脑远程开机卡原理图"></p>
+<p>电路PCB Layout：<br><img src="/images/pc-remote-control/PCB.png" alt="电脑远程开机卡原理图"></p>
+<p>焊接好的电路板：<br><img src="/images/pc-remote-control/picture.png" alt="电脑远程开机卡原理图"></p>
+<p>作为一个孤独的爱好者，记录的这些想法也不知会不会有人看到。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/01/06/pc-remote-control/">展开全文 >></a>
         </p>
       
 
